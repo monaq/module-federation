@@ -1,11 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>이력서 - 개발자 포트폴리오</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script type="module" src="dist/bundle.js"></script>
+    <div class="container">
+        <div class="resume">
+            <!-- 헤더 섹션 -->
+            <div class="header">
+                <div class="profile-img">
+                    <img src="./public/character.webp" alt="권단비" width="150px">
+                </div>
+                <div class="header-info">
+                    <h1 class="name">권단비</h1>
+                    <p class="title">재미있게 일하는 프론트엔드 개발자입니다.</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>spillover427@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>010-8596-4523</span>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- 내용 섹션 -->
+            <div class="content">
+                <!-- 자기소개 -->
+                <div class="section">
+                    <h2 class="section-title">자기소개</h2>
+                    <p class="about-text">
+11년 경력의 프론트엔드 개발자로서 React 및 Angular 기반의 웹 서비스 구축, 설계를 전문으로 하고 있으며 팀 내에서는 대외적으로 신뢰할 만한 협업 중심축으로 평가 받고 있습니다. 다양한 서비스 기업에서 UI 컴포넌트 개발, 실시간 스트리밍 구현, 전사 공통 시스템 구축 등 핵심 기능을 리딩하였습니다.<br/><br/>팀에서의 제 별명은 '엄마'였습니다. 팀원들이 기술적인 이슈부터 진로에 대한 고민까지 터놓고 말할 수 있는 동료였기 때문입니다. 저는 동료들과 함께 모르는 분야를 스터디하고, 후임 개발자가 스스로 깨우칠 수 있도록 키워드를 제공했습니다. 코드리뷰나 페어프로그래밍을 통해 기술적으로 발전할 수 있도록 적극적인 도움을 주기도 했습니다. 덕분에 2020년에는 '신입 개발자를 교육하고, 프로젝트를 성공적으로 이끌었다'는 평가를 받으며 개발그룹 내 우수사원으로 선발되어 포상을 받았습니다. <br/><br/>재직 기간동안 늘 동료평가, 직책자평가 모두 감사하게도 좋은 평가를 받았습니다. 적극적인 태도와 정확성, 커뮤니케이션 능력에서 좋은 의견을 주셨고, 덕분에 2021년도에는 CTO추천 사내 핵심인재로 선발되어 2022년도의 업무를 긍정적으로 소화하는 데 많은 용기와 힘을 받을 수 있었습니다.
+                    </p>
+                </div>
+
+                <!-- 기술 스택 -->
+                <div class="section">
+                    <h2 class="section-title">기술 스택</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <ul class="skill-list">
+                                <li>React.js (v18 ~ v16)</li>
+                                <li>Angular (v8 ~ v6)</li>
+                                <li>TypeScript</li>
+                                <li>JavaScript (ESNext ~ ES5)</li>
+                                <li>Redux / MobX / Zustand</li>
+                                <li>WebSocket</li>
+                                <li>HTML5 / CSS3</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Development Tools</h4>
+                            <ul class="skill-list">
+                                <li>Webpack / Vite</li>
+                                <li>Git / GitHub</li>
+                                <li>Private NPM Registry</li>
+                                <li>Wiki / Confluence</li>
+                                <li>Webpack / Vite</li>
+                                <li>ESLint / Prettier</li>
+
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Testing Tools</h4>
+                            <ul class="skill-list">
+                                <li>Jest / Vitest</li>
+                                <li>React Testing Library</li>
+                                <li>Storybook</li>
+                                <li>Cypress</li>
+                                <li>Mock Service Worker(MSW)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 경력 -->
+                <div class="section">
+                    <h2 class="section-title">경력</h2>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="company">11번가</h3>
+                                <p class="position">시니어 프론트엔드 개발자</p>
+                            </div>
+                            <span class="period">2019.12 - 현재</span>
+                        </div>
+                        <p class="experience-description">
+                            <ul class="experience-list">
+                                <li>FE 프로젝트 리드개발자로서 jira보드 관리, 위클리 진행</li>
+                                <li>11번가 공통 표준UI시스템인 PUI를 이용한 개발</li>
+                                <li>전사에 제공되는 라이브러리 (미니 장바구니) 개발/배포</li>
+                                <li>LIVE11 실시간 방송 인터랙션과 채팅을 위한 Websocket 적용, 대량의 데이터 렌더링에 따른 화면 성능 개선</li>
+                                <li>Amazon과의 협업으로 저지연 스트리밍 솔루션인 IVS player 적용</li>
+                                <li>PC개편 작업과 더불어, 공통템플릿 GNB 영역 운영</li>
+                                <li>Amazon 상품상세 다국어 지원 기능 개발과 API 요청 효율성 개선</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="company">Swit</h3>
+                                <p class="position">시니어 프론트엔드 개발자</p>
+                            </div>
+                            <span class="period">2019.01 - 2019.12</span>
+                        </div>
+                        <p class="experience-description">
+                            <ul class="experience-list">
+                                <li>Gmail Rest API를 연동한 서비스 개발과 Electron 빌드, 배포</li>
+                                <li>Apple, Google OAuth 2.0 인증과 Access token 기반 보안 처리</li>
+                                <li>Stripe API를 연동한 결제 서비스 개발</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="company">dktechin</h3>
+                                <p class="position">주니어 프론트엔드 개발자</p>
+                            </div>
+                            <span class="period">2017.01 - 2018.12</span>
+                        </div>
+                        <p class="experience-description">
+                            <ul class="experience-list">
+                                <li>kakao i 브랜드사이트를 담당하여 다양한 인터랙션을 적용한 반응형 웹 개발, 운영</li>
+                                <li>Daum 공통 컴포넌트 운영
+                                    <ul class="sub-experience-list">
+                                        <li>소셜쉐어: kakao, facebook, twitter 등의 다양한 소셜 API 연동</li>
+                                        <li>다음에디터: 대규모의 js 모듈 관리, 테스트 케이스 유지보수</li>
+                                        <li>포토에디터: html5 canvas를 이용해 스티커, 이미지 편집, 드로잉 등의 다양한 기능 제공</li>
+                                    </ul>
+                                </li>
+                                <li>모바일 환경을 이용한 다양한 광고 배너 상품 개발</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="company">IBTrade</h3>
+                                <p class="position">마크업 개발자</p>
+                            </div>
+                            <span class="period">2014.12 - 2016.10</span>
+                        </div>
+                        <p class="experience-description">
+                            <ul class="experience-list">
+                                <li>IBTrade 웹 플랫폼 마크업 개발</li>
+                                <li>jQuery 기반의 웹 플랫폼 인터랙션 개발</li>
+                                <li>Chart.js를 이용한 차트 개발</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 학력 -->
+                <div class="section">
+                    <h2 class="section-title">학력</h2>
+                    <div class="education-item">
+                        <div>
+                            <h3 class="school">국민대학교</h3>
+                            <p class="degree">영어영문학과/언론정보학부 학사</p>
+                        </div>
+                        <span class="graduation-year">2014년 8월 졸업</span>
+                    </div>
+                    <div class="education-item">
+                        <div>
+                            <h3 class="school">국비지원 IT 부트캠프</h3>
+                            <p class="degree">풀스택 웹 개발 과정</p>
+                        </div>
+                        <span class="graduation-year">2014년 9월 수료</span>
+                    </div>
+                </div>
+
+                <!-- 프로젝트 포트폴리오 -->
+                <div class="section">
+                    <h2 class="section-title">프로젝트 포트폴리오</h2>
+                    <div class="portfolio-section">
+                        <p class="portfolio-description">
+                            더 자세한 프로젝트 내용과 기술적 구현 과정을 확인하실 수 있습니다.
+                        </p>
+                        <div class="portfolio-link-container">
+                            <a href="https://shorturl.at/uK2ZG" target="_blank" class="portfolio-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>노션에서 자세한 프로젝트 보기</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -4,4 +4,4 @@ import('./src/a').then((a) => {
 
 import('./src/b').then((b) => {
     b();
-});
+}); 
