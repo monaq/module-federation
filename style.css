@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Noto Sans KR', Arial, sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     background: #f7f7f7;
     color: #222;
     min-height: 100vh;
@@ -77,7 +77,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 18px 32px;
-    font-size: 0.98rem;
+    font-size: 0.95rem;
     color: #444;
 }
 
@@ -146,8 +146,8 @@ body {
 }
 
 .skill-list li::before {
-    content: '•';
-    color: #2d5be3;
+    content: '• ';
+    color: #2d5be3;  
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -186,12 +186,13 @@ body {
     color: #666;
     font-style: italic;
     margin-bottom: 4px;
+    font-size: 0.95rem;
 }
 
 .experience-description {
     color: #444;
     line-height: 1.6;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .experience-list {
@@ -201,16 +202,15 @@ body {
 
 .experience-list li {
     position: relative;
-    
     padding-left: 1.2em;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #444;
+    color: #555;
 }
 
 .experience-list li::before {
-    content: '▸';
+    content: '• ';
     color: #2d5be3;
     font-weight: bold;
     position: absolute;
@@ -231,11 +231,11 @@ body {
 
 .sub-experience-list li {
     position: relative;
-    padding-left: 1em;
+    padding-left: 1.2em;
     margin-bottom: 4px;
+    font-size: 0.95rem;
     line-height: 1.4;
-    color: #555;
-    font-size: 0.92rem;
+    color: #666;
 }
 
 .sub-experience-list li::before {
@@ -251,30 +251,72 @@ body {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .project-card {
-    background: #f5f7fa;
+    background: #ffffff;
     border-radius: 8px;
-    padding: 14px 16px;
-    border: 1px solid #e0e0e0;
+    padding: 28px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-left: 3px solid #2d5be3;
+}
+
+.project-card:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-card:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.project-card:nth-child(even) {
+    background: #ffffff;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-color: #2d5be3;
+}
+
+.project-card::before {
+    display: none;
 }
 
 .project-title {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #222;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.project-details {
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 .project-description {
-    color: #444;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.project-role,
+.project-achievement,
+.project-tech {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
     line-height: 1.5;
-    font-size: 0.97rem;
 }
 
 .project-tech {
@@ -288,7 +330,6 @@ body {
     color: white;
     padding: 2px 10px;
     border-radius: 12px;
-    font-size: 0.85rem;
     font-weight: 500;
 }
 
@@ -304,9 +345,13 @@ body {
     gap: 6px;
     color: #2d5be3;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    transition: color 0.2s ease;
+    padding: 6px 12px;
+    border: 1px solid #2d5be3;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    background: transparent;
 }
 
 .project-link:hover {
@@ -331,19 +376,20 @@ body {
 }
 
 .school {
+    font-size: 1.08rem;
     font-weight: 600;
     color: #222;
 }
 
 .degree {
     color: #666;
-    font-size: 0.97rem;
+    font-size: 0.95rem;
 }
 
 .graduation-year {
     color: #2d5be3;
     font-weight: 500;
-    font-size: 0.97rem;
+    font-size: 0.95rem;
 }
 
 .portfolio-section {
@@ -355,7 +401,6 @@ body {
 
 .portfolio-description {
     color: #444;
-    font-size: 0.98rem;
     line-height: 1.6;
     margin-bottom: 16px;
 }
@@ -368,25 +413,171 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #2d5be3;
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
     border-radius: 6px;
     font-size: 0.95rem;
     font-weight: 500;
     transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(45, 91, 227, 0.2);
-}
-
-.portfolio-link:hover {
-    background: #1e3a8a;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(45, 91, 227, 0.3);
 }
 
 .portfolio-link i {
     font-size: 0.9rem;
+}
+
+/* 주요 프로젝트 섹션 스타일 */
+.portfolio-item {
+    background: #f8f9fb;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    border-left: 3px solid #2d5be3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
+}
+
+.portfolio-header {
+    margin-bottom: 12px;
+}
+
+.portfolio-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.portfolio-description {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.portfolio-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+}
+
+.portfolio-list li {
+    position: relative;
+    padding-left: 1.2em;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.portfolio-list li::before {
+    content: '• ';
+    color: #2d5be3;
+    font-weight: bold;
+    position: absolute; 
+    left: 0;
+    top: 0;
+}
+
+.portfolio-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* 포트폴리오 서브 섹션 스타일 */
+.portfolio-subtitle {
+    color: #2d5be3;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.portfolio-subsection {
+    margin-bottom: 12px;
+}
+
+.portfolio-subsection-title {
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.portfolio-subtitle-with-margin {
+    margin: 16px 0 8px 0;
+}
+
+.portfolio-link {
+    color: #2d5be3;
+    text-decoration: none;
+    font-weight: normal;
+    opacity: 0.9;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.portfolio-link:hover {
+    color: #1e3a8a;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.skills-table {
+    display: table;
+    width: 100%;
+    margin-bottom: 24px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.skills-row {
+    display: table-row;
+}
+
+.skills-category {
+    display: table-cell;
+    font-weight: bold;
+    color: #2d5be3;
+    padding: 12px 16px 12px 8px;
+    vertical-align: top;
+    width: 140px;
+    background: #f5f7fa;
+    border-radius: 8px 0 0 8px;
+    border-right: 1px solid #e0e0e0;
+    font-size: 1rem;
+}
+
+.skills-items {
+    display: table-cell;
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #eef3fa;
+    color: #2d5be3;
+    border-radius: 16px;
+    padding: 4px 12px;
+    margin: 2px 6px 2px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    gap: 6px;
+    border: 1px solid #e0e0e0;
+    transition: background 0.2s, color 0.2s;
+}
+
+.skill-tag i {
+    font-size: 1.1em;
+}
+
+.skill-tag:hover {
+    background: #2d5be3;
+    color: #fff;
 }
 
 @media (max-width: 700px) {
@@ -401,6 +592,19 @@ body {
     }
     .header-info {
         width: 100%;
+    }
+    .skills-table, .skills-row, .skills-category, .skills-items {
+        display: block;
+        width: 100%;
+    }
+    .skills-category {
+        border-radius: 8px 8px 0 0;
+        border-right: none;
+        margin-bottom: 0;
+        padding: 10px 8px;
+    }
+    .skills-items {
+        padding: 10px 8px 16px 8px;
     }
 }
 
@@ -446,7 +650,7 @@ body {
     .education-item {
         padding: 6px 0 !important;
     }
-    .projects-grid, .skills-grid {
+    .skills-grid {
         gap: 8px !important;
     }
     .tech-tag {
@@ -459,4 +663,6 @@ body {
     a[href]:after {
         content: " (" attr(href) ")";
     }
+   
 } 
+

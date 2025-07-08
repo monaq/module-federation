@@ -47,40 +47,46 @@
                 <!-- 기술 스택 -->
                 <div class="section">
                     <h2 class="section-title">기술 스택</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Frontend</h4>
-                            <ul class="skill-list">
-                                <li>React.js (v18 ~ v16)</li>
-                                <li>Angular (v8 ~ v6)</li>
-                                <li>TypeScript</li>
-                                <li>JavaScript (ESNext ~ ES5)</li>
-                                <li>Redux / MobX / Zustand</li>
-                                <li>WebSocket</li>
-                                <li>HTML5 / CSS3</li>
-                            </ul>
+                    <div class="skills-table">
+                        <div class="skills-row">
+                            <div class="skills-category">Frontend</div>
+                            <div class="skills-items">
+                                <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+                                <span class="skill-tag"><i class="fab fa-angular"></i> Angular</span>
+                                <span class="skill-tag"><i class="fab fa-js-square"></i> TypeScript</span>
+                                <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="fas fa-database"></i> Zustand</span>
+                                <span class="skill-tag"><i class="fas fa-exchange-alt"></i> Redux</span>
+                                <span class="skill-tag"><i class="fas fa-bolt"></i> MobX</span>
+                                <span class="skill-tag"><i class="fas fa-globe"></i> WebSocket</span>
+                                <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            </div>
                         </div>
-                        <div class="skill-category">
-                            <h4>Development Tools</h4>
-                            <ul class="skill-list">
-                                <li>Webpack / Vite</li>
-                                <li>Git / GitHub</li>
-                                <li>Private NPM Registry</li>
-                                <li>Wiki / Confluence</li>
-                                <li>Webpack / Vite</li>
-                                <li>ESLint / Prettier</li>
-
-                            </ul>
+                        <div class="skills-row">
+                            <div class="skills-category">Development Tools</div>
+                            <div class="skills-items">
+                                <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                                <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                                <span class="skill-tag"><i class="fab fa-npm"></i> NPM</span>
+                                <span class="skill-tag"><i class="fas fa-cube"></i> Webpack</span>
+                                <span class="skill-tag"><i class="fas fa-bolt"></i> Vite</span>
+                                <span class="skill-tag"><i class="fas fa-book"></i> Wiki</span>
+                                <span class="skill-tag"><i class="fas fa-book-open"></i> Confluence</span>
+                                <span class="skill-tag"><i class="fas fa-code"></i> ESLint</span>
+                                <span class="skill-tag"><i class="fas fa-paint-brush"></i> Prettier</span>
+                            </div>
                         </div>
-                        <div class="skill-category">
-                            <h4>Testing Tools</h4>
-                            <ul class="skill-list">
-                                <li>Jest / Vitest</li>
-                                <li>React Testing Library</li>
-                                <li>Storybook</li>
-                                <li>Cypress</li>
-                                <li>Mock Service Worker(MSW)</li>
-                            </ul>
+                        <div class="skills-row">
+                            <div class="skills-category">Testing Tools</div>
+                            <div class="skills-items">
+                                <span class="skill-tag"><i class="fas fa-vial"></i> Jest</span>
+                                <span class="skill-tag"><i class="fas fa-vial"></i> Vitest</span>
+                                <span class="skill-tag"><i class="fas fa-book"></i> Storybook</span>
+                                <span class="skill-tag"><i class="fas fa-flask"></i> React Testing Library</span>
+                                <span class="skill-tag"><i class="fas fa-robot"></i> Cypress</span>
+                                <span class="skill-tag"><i class="fas fa-server"></i> MSW</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +106,7 @@
                             <ul class="experience-list">
                                 <li>FE 프로젝트 리드개발자로서 jira보드 관리, 위클리 진행</li>
                                 <li>11번가 공통 표준UI시스템인 PUI를 이용한 개발</li>
-                                <li>전사에 제공되는 라이브러리 (미니 장바구니) 개발/배포</li>
+                                <li>전사 공통 라이브러리 개발/배포 (미니 장바구니, GNB 영역 라이브러리 등)</li>
                                 <li>LIVE11 실시간 방송 인터랙션과 채팅을 위한 Websocket 적용, 대량의 데이터 렌더링에 따른 화면 성능 개선</li>
                                 <li>Amazon과의 협업으로 저지연 스트리밍 솔루션인 IVS player 적용</li>
                                 <li>PC개편 작업과 더불어, 공통템플릿 GNB 영역 운영</li>
@@ -185,16 +191,170 @@
 
                 <!-- 프로젝트 포트폴리오 -->
                 <div class="section">
-                    <h2 class="section-title">프로젝트 포트폴리오</h2>
-                    <div class="portfolio-section">
-                        <p class="portfolio-description">
-                            더 자세한 프로젝트 내용과 기술적 구현 과정을 확인하실 수 있습니다.
-                        </p>
-                        <div class="portfolio-link-container">
-                            <a href="https://shorturl.at/uK2ZG" target="_blank" class="portfolio-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                <span>노션에서 자세한 프로젝트 보기</span>
-                            </a>
+                    <h2 class="section-title">주요 프로젝트</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3 class="project-title">LIVE11 - 라이브 커머스 플랫폼</h3>
+                            <p class="project-description">
+                                기존에 외부 SDK를 통해 제공하던 라이브 커머스 서비스를 새롭게 개발하여 자체 기술로 삼고, AWS와의 협업을 통해 짧은 대기 시간을 보장하여 매끄럽고 몰입감 높은 라이브커머스 경험을 선도하는 프로젝트
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> 실시간 방송 인터랙션 및 채팅 기능 구현, WebSocket 적용
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> Amazon IVS player 도입으로 방송 지연 최소화, 렌더링 성능 60% 개선
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> React, WebSocket, AWS IVS Player, MobX, Storybook
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://zdnet.co.kr/view/?no=20210823090316" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 관련 기사
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3 class="project-title">11번가 통합마트 (mart-plus) 프로젝트</h3>
+                            <p class="project-description">
+                                11번가의 전사 프로젝트인 통합마트 (mart-plus) 프로젝트의 프론트엔드 개발을 리딩하며, 여러 이슈들을 조율하고 해결한 프로젝트
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> Web Front Senior, UI팀과의 모노레포 내부 첫 협업 리딩
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> 공통 라이브러리 제작, 재사용성 고려한 기능 구현, UI 팀과의 협업 프로세스 구축
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> React, TypeScript, Vite, Vitest, Storybook
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.joongangenews.com/news/articleView.html?idxno=420943" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 관련 기사
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3 class="project-title">11번가 숏폼 서비스</h3>
+                            <p class="project-description">
+                                11번가 내의 5초~2분 가량의 짧은 영상(숏폼) 서비스에서 고객의 활발한 interaction을 유도하고 관리하기 위한 백오피스를 개발한 프로젝트
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> Web Front Senior, 프로젝트 리딩 (3MM 투입)
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> 동영상 업로드, 섬네일 생성, 댓글관리 기능 구현
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> React, TypeScript, Vite, Vitest, Storybook
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.yna.co.kr/view/AKR20240424041600030" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 관련 기사
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3 class="project-title">11번가 PC 개편 프로젝트</h3>
+                            <p class="project-description">
+                                PC 서비스의 UX를 전면 개편하고, 기존에 파악되지 않고 있었던 레거시의 정리를 목표로 하는 프로젝트
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> Web Front Senior, 신입 교육과 프로젝트 실무 리딩 (3MM 투입)
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> 공통템플릿에서의 Backend와 Frontend 로직 분리 주도, 레거시 코드 정리 및 추적, 전사대상 공통템플릿 가이드 제공
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> Preact, TypeScript, Webpack
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://zdnet.co.kr/view/?no=20200812082921" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 관련 기사
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3 class="project-title">Swit - Google Gmail API 연동 서비스</h3>
+                            <p class="project-description">
+                                Swit 플랫폼 내에서 Gmail을 편리하게 사용할 수 있게 제공하는 서비스
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> Web Front Senior, Gmail Rest API 연동 서비스 개발
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> 메일 동기화, 읽기, 쓰기, 채널 공유, 태스크 전환 기능 구현
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> Anguar 7, Gmail API, Electron, OAuth 2.0
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3 class="project-title">Swit - 결제 시스템 개발</h3>
+                            <p class="project-description">
+                                무료 체험 기간을 제공하고, Advanced 플랜, Enterprise 플랜 구독을 할 수 있도록 결제 시스템을 제공하는 프로젝트
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> Web Front Senior, Stripe API 연동과 결제 프론트 화면 구현
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> 결제단계별 페이지 전환, 신용카드 인증, 플랜별 기능 제한 구현
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> Angular 6, Stripe API
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3 class="project-title">kakao i 브랜드사이트</h3>
+                            <p class="project-description">
+                                kakao i (카카오미니) 프로젝트의 소개 사이트를 제공하는 프로젝트
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> Web Front, 다양한 인터랙션을 적용한 반응형 웹 페이지 개발
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> 반응형 웹, 프로모션 영상 자동재생, 인터랙션 구현
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> React, Redux, Webpack
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3 class="project-title">Daum Mobile 광고슬롯 운영/개발</h3>
+                            <p class="project-description">
+                                모바일 앱/웹에 노출되는 광고 슬롯을 운영하고, 신규 광고 상품을 개발하여 제안한 프로젝트
+                            </p>
+                            <div class="project-details">
+                                <div class="project-role">
+                                    <strong>역할:</strong> Web Front Junior, 모바일 환경을 이용한 다양한 광고 배너 상품 개발
+                                </div>
+                                <div class="project-achievement">
+                                    <strong>성과:</strong> 영상 광고, 렌티큘러 인터랙션 배너, Google Ads 배너 광고 개발
+                                </div>
+                                <div class="project-tech">
+                                    <strong>기술:</strong> HTML5, CSS3, Vanilla JavaScript
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

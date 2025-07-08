@@ -1,5 +1,4 @@
 const path = require('path');
-const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = {
     entry: './main.js',
@@ -13,16 +12,6 @@ module.exports = {
     experiments: {
         outputModule: true
     },
-    plugins: [
-        new ModuleFederationPlugin({
-            name: 'moduleFederation',
-            filename: 'remoteEntry.js',
-            exposes: {
-                './a': './src/a.js',
-                './b': './src/b.js'
-            },
-        })
-    ],
     devServer: {
         static: {
             directory: path.join(__dirname, './'),
